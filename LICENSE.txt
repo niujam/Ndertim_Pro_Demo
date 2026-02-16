@@ -1,0 +1,19 @@
+NDËRTIM PRO - END USER LICENSE AGREEMENT (EULA)
+​Product: Ndërtim Pro - Premium Construction Template
+Author: Avni Hasani (avnihasa68@gmail.com)
+Date: 2026
+​1. LICENSE TYPES & USAGE
+​Standard License: Grants you, the purchaser, a non-exclusive, non-transferable right to make use of the template to create one (1) single end product (one website) for yourself or for one client.
+​Extended License: Grants the same rights as the Standard License but allows the template to be used for multiple end products (multiple websites/clients).
+​2. RESTRICTIONS ON RESALE & REDISTRIBUTION
+​No Resale: You are strictly prohibited from reselling, redistributing, or sub-licensing the template or any of its components in its original or modified form.
+​Anti-Circumvention (Superficial Modifications): You may not claim ownership or attempt to resell this template even if you have made modifications. "Superficial modifications"—including but not limited to: changing colors, swapping logos, altering text, or rearranging CSS blocks—do not constitute a new original work. The underlying architecture and code remain the intellectual property of Ndërtim Pro.
+​No Open Sourcing: You may not host this template on public repositories (like GitHub) in a way that allows others to download and use the source code for free.
+​3. INTELLECTUAL PROPERTY
+​All code (HTML, CSS, JS), design assets, and custom logic (such as the Cost Calculator and Firebase integration) are owned by the author.
+​You may remove the "Developed by" credits in the footer for your client’s final website, but the underlying copyright in the source code must remain intact.
+​4. SUPPORT & WARRANTY
+​Support: 6 months of free technical support is included from the date of purchase. This covers bug fixes and minor CSS adjustments. It does not include major custom feature development.
+​No Warranty: The software is provided "as-is". The author is not liable for any damages resulting from the use or inability to use this template (including API costs from Firebase or Google Maps).
+​5. TERMINATION
+​This license is automatically terminated if you breach any of the terms. Upon termination, you must cease use of the template and destroy all copies in your possession.

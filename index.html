@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ndërtim Pro - Ekspertët e Ndërtimit dhe Rikonstruksionit në Shqipëri. Shërbime profesionale të gipsit, ndërtimeve dhe rikonstruksioneve.">
+  <meta name="keywords" content="ndërtim, rikonstruksion, gips, ndërtim shqipëri, kompani ndërtimi">
+  <meta name="author" content="Ndërtim Pro">
+  
+  <!-- Open Graph Meta Tags për Social Media -->
+  <meta property="og:title" content="Ndërtim Pro - Ekspertët e Ndërtimit">
+  <meta property="og:description" content="Ndërtojmë me pasion dhe integritet. Nga strukturat metalike te punimet dekorative të gipsit.">
+  <meta property="og:type" content="website">
+  
+  <title>Ndërtim Pro | Ekspertët e Ndërtimit dhe Rikonstruksionit</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="assets/hero-bg.jpg" as="image">
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER SECTION - Sticky Glassmorphism Effect
+       ============================================ -->
+  <header id="mainHeader" class="header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <h1 data-i18n="site_name">NDËRTIM<span>PRO</span></h1>
+      </div>
+      <div id="language-switcher-container"></div>
+
+      
+      <!-- Mobile Menu Toggle Button -->
+      <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <!-- Navigation Menu -->
+<nav class="main-nav" role="navigation">
+  <ul>
+    <li><a href="index.html" class="active" data-i18n="nav_home">Kryefaqja</a></li>
+    <li><a href="about.html" data-i18n="nav_about">Rreth Nesh</a></li>
+    <li><a href="services.html" data-i18n="nav_services">Shërbimet</a></li>
+    <li><a href="contact.html" data-i18n="nav_contact">Kontakti</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO SECTION - Full Screen with Parallax
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="text-box reveal-fade-up">
+        <h2 data-i18n="hero_title">Ndërtojmë me <span class="highlight">Pasion</span> dhe Integritet</h2>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">Nga strukturat metalike te punimet dekorative të gipsit. Ne realizojmë çdo vizion tuajin brenda afateve të caktuara.</p>
+        <div class="hero-btns">
+          <a href="contact.html" class="btn btn-primary" data-i18n="hero_btn_contact">
+            <i class="fas fa-phone-alt"></i> Na Kontakto Tani
+          </a>
+          <a href="#projects" class="btn btn-outline" data-i18n="hero_btn_projects">
+            <i class="fas fa-images"></i> Shiko Projektet
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-indicator">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============================================
+       STATS SECTION - Counter Animation
+       ============================================ -->
+  <section class="stats reveal-fade-up">
+    <div class="stats-container">
+      <div class="stat-item">
+        <i class="fas fa-hammer"></i>
+        <h3 class="counter" data-target="250">0</h3>
+        <p data-i18n="stats_projects">Projekte të Përfunduara</p>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-smile"></i>
+        <h3 class="counter" data-target="180">0</h3>
+        <p data-i18n="stats_clients">Klientë të Kënaqur</p>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-trophy"></i>
+        <h3 class="counter" data-target="15">0</h3>
+        <p data-i18n="stats_experience">Vite Përvojë</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES SECTION - Premium Cards with Hover
+       ============================================ -->
+  <section class="services-grid" id="projects">
+    <div class="container">
+      <div class="section-title reveal-fade-up">
+        <h2 data-i18n="section_services_title">Shërbimet Tona Profesionale</h2>
+        <div class="line"></div>
+        <p class="section-subtitle" data-i18n="section_services_subtitle">Zgjidhje të plota për çdo nevojë ndërtimi</p>
+      </div>
+      
+      <div class="services-container">
+        <!-- Service Card 1 -->
+        <div class="service-card reveal-fade-up" data-delay="100">
+          <div class="service-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3 data-i18n="service_construction_title">Ndërtim Objektesh</h3>
+          <p data-i18n="service_construction_desc">Ndërtime civile dhe industriale me standarde bashkëkohore. Përdorim teknologjinë më të fundit dhe materialet më cilësore.</p>
+          <ul class="service-features">
+            <li data-i18n="service_construction_feature1"><i class="fas fa-check"></i> Ndërtim nga zero</li>
+            <li data-i18n="service_construction_feature2"><i class="fas fa-check"></i> Struktura metalike</li>
+            <li data-i18n="service_construction_feature3"><i class="fas fa-check"></i> Certifikime ndërkombëtare</li>
+          </ul>
+          <a href="services.html#ndertim" class="service-link" data-i18n="service_construction_link">
+            Më shumë <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card reveal-fade-up" data-delay="200">
+          <div class="service-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3 data-i18n="service_renovation_title">Rikonstruksione</h3>
+          <p data-i18n="service_renovation_desc">Transformojmë ambientet tuaja të vjetra në hapësira moderne dhe funksionale. Rijetëzojmë objektet me stil dhe inovacion.</p>
+          <ul class="service-features">
+            <li data-i18n="service_renovation_feature1"><i class="fas fa-check"></i> Renovime totale</li>
+            <li data-i18n="service_renovation_feature2"><i class="fas fa-check"></i> Modernizim objektesh</li>
+            <li data-i18n="service_renovation_feature3"><i class="fas fa-check"></i> Garanci 5-vjeçare</li>
+          </ul>
+          <a href="services.html#rikonstruksion" class="service-link" data-i18n="service_renovation_link">
+            Më shumë <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card reveal-fade-up" data-delay="300">
+          <div class="service-icon">
+            <i class="fas fa-brush"></i>
+          </div>
+          <h3 data-i18n="service_gypsum_title">Lyerje & Gips</h3>
+          <p data-i18n="service_gypsum_desc">Punime gipsi dekorative dhe lyerje me cilësi maksimale. Detaje artistike që bëjnë diferencën në çdo ambient.</p>
+          <ul class="service-features">
+            <li data-i18n="service_gypsum_feature1"><i class="fas fa-check"></i> Dizajne unike</li>
+            <li data-i18n="service_gypsum_feature2"><i class="fas fa-check"></i> Materiale premium</li>
+            <li data-i18n="service_gypsum_feature3"><i class="fas fa-check"></i> Ekip i specializuar</li>
+          </ul>
+          <a href="services.html#gips" class="service-link" data-i18n="service_gypsum_link">
+            Më shumë <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       COST CALCULATOR SECTION - Premium Feature
+       ============================================ -->
+  <section class="cost-calculator reveal-fade-up" id="calculator">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="calculator_title">Llogarit Koston e Projektit</h2>
+        <div class="line"></div>
+        <p class="section-subtitle" data-i18n="calculator_subtitle">Merrni një çmim të përafërt për projektin tuaj brenda disa sekondave</p>
+      </div>
+
+      <div class="calculator-wrapper">
+        <div class="calculator-form">
+          <!-- Project Type Selection -->
+          <div class="form-group">
+            <label for="projectType" data-i18n="calculator_label_type">
+              <i class="fas fa-hard-hat"></i> Lloji i Punimit
+            </label>
+            <select id="projectType" required>
+              <option value="" data-i18n="calculator_option_select">Zgjidhni llojin e punimit</option>
+              <option value="ndertim" data-price="400" data-i18n="calculator_option_construction">Ndërtim nga Zero (€400/m²)</option>
+              <option value="rikonstruksion" data-price="250" data-i18n="calculator_option_renovation">Rikonstruksion Total (€250/m²)</option>
+              <option value="gips" data-price="45" data-i18n="calculator_option_gypsum">Punime Gipsi (€45/m²)</option>
+              <option value="lyerje" data-price="15" data-i18n="calculator_option_painting">Lyerje Profesionale (€15/m²)</option>
+              <option value="fasade" data-price="120" data-i18n="calculator_option_facade">Punime Fasadash (€120/m²)</option>
+            </select>
+          </div>
+
+          <!-- Square Meters Input -->
+          <div class="form-group">
+            <label for="squareMeters" data-i18n="calculator_label_area">
+              <i class="fas fa-ruler-combined"></i> Sipërfaqja (m²)
+            </label>
+            <input 
+              type="number" 
+              id="squareMeters" 
+              data-i18n="calculator_placeholder_area"
+              data-i18n-attr="placeholder"
+              placeholder="Shkruani sipërfaqen në m²" 
+              min="1" 
+              max="10000" 
+              required
+            >
+            <div class="input-helper" data-i18n="calculator_helper_area">Vendosni sipërfaqen që dëshironi të punoni</div>
+          </div>
+
+          <!-- Additional Options -->
+          <div class="form-group">
+            <label data-i18n="calculator_label_additional">
+              <i class="fas fa-plus-circle"></i> Shërbime Shtesë (Opsionale)
+            </label>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="premium-materials" value="15">
+                <span data-i18n="calculator_checkbox_premium">Materiale Premium (+15%)</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="express-delivery" value="20">
+                <span data-i18n="calculator_checkbox_express">Dorëzim Ekspres (+20%)</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="design-consultation" value="500">
+                <span data-i18n="calculator_checkbox_design">Konsulencë Dizajni (+€500)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Calculate Button -->
+          <button type="button" id="calculateBtn" class="btn btn-primary btn-large" data-i18n="calculator_btn_calculate">
+            <i class="fas fa-calculator"></i> Llogarit Koston
+          </button>
+        </div>
+
+        <!-- Result Display -->
+        <div class="calculator-result" id="calculatorResult">
+          <div class="result-icon">
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <h3 data-i18n="calculator_result_title">Kostoja e Përafërt</h3>
+          <div class="result-price">
+            <span class="currency">€</span>
+            <span id="totalPrice">0</span>
+          </div>
+          <div class="result-breakdown">
+            <div class="breakdown-item">
+              <span data-i18n="calculator_result_base">Kosto Bazë:</span>
+              <span id="basePrice">€0</span>
+            </div>
+            <div class="breakdown-item">
+              <span data-i18n="calculator_result_additional">Shërbime Shtesë:</span>
+              <span id="additionalCost">€0</span>
+            </div>
+          </div>
+          <p class="result-note" data-i18n="calculator_result_note">
+            <i class="fas fa-info-circle"></i> 
+            Ky është një çmim i përafërt. Për një ofertë të detajuar, ju lutemi na kontaktoni.
+          </p>
+          <a href="contact.html" class="btn btn-outline" data-i18n="calculator_result_btn">
+            Kërko Ofertë të Detajuar
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA BANNER - Call to Action
+       ============================================ -->
+  <section class="cta-banner reveal-fade-up">
+    <div class="cta-content">
+      <h2 data-i18n="cta_title">Gati për të filluar projektin tuaj?</h2>
+      <p data-i18n="cta_subtitle">Na shkruani sot për një konsulencë falas dhe një ofertë profesionale.</p>
+      <a href="contact.html" class="btn btn-primary btn-large" data-i18n="cta_btn">
+        <i class="fas fa-envelope"></i> Merr një Ofertë Falas
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER SECTION
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Company Info -->
+        <div class="footer-col">
+          <div class="footer-logo">
+            <h3 data-i18n="footer_logo">NDËRTIM<span>PRO</span></h3>
+          </div>
+          <p class="footer-desc" data-i18n="footer_tagline">Cilësia që zgjat në kohë. Partnerët tuaj të besuar për çdo projekt ndërtimi.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_links_title">Lidhje të Shpejta</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="footer_links_home">Kryefaqja</a></li>
+            <li><a href="about.html" data-i18n="footer_links_about">Rreth Nesh</a></li>
+            <li><a href="services.html" data-i18n="footer_links_services">Shërbimet</a></li>
+            <li><a href="contact.html" data-i18n="footer_links_contact">Kontakti</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_services_title">Shërbimet</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#ndertim" data-i18n="footer_services_construction">Ndërtim Objektesh</a></li>
+            <li><a href="services.html#rikonstruksion" data-i18n="footer_services_renovation">Rikonstruksione</a></li>
+            <li><a href="services.html#gips" data-i18n="footer_services_gypsum">Lyerje & Gips</a></li>
+            <li><a href="#calculator" data-i18n="footer_services_calculator">Llogaritësi i Kostos</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_contact_title">Kontakti</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+355691234567">+355 69 123 4567</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="/cdn-cgi/l/email-protection#98f1f6fef7d8f6fcfdeaecf1f5e8eaf7b6f9f4"><span class="__cf_email__" data-cfemail="274e4941486749434255534e4a57554809464b">[email&#160;protected]</span></a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-i18n="contact_info_address">Tiranë, Shqipëri</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ndërtim Pro. <span data-i18n="footer_copyright">Të gjitha të drejtat e rezervuara.</span></p>
+        <p class="credits"><span data-i18n="footer_credits">Dizajnuar & Zhvilluar me</span> <i class="fas fa-heart"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to   Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Main JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rreth Ndërtim Pro - Kompania jonë ka më shumë se 15 vite përvojë në ndërtim, rikonstruksion dhe punime gipsi.">
+  <title>Rreth Nesh | Ndërtim Pro</title>
+  
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="mainHeader" class="header">
+    <div class="header-container">
+      <div class="logo">
+        <h1 data-i18n="site_name">NDËRTIM<span>PRO</span></h1>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <nav class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Kryefaqja</a></li>
+          <li><a href="about.html" class="active" data-i18n="nav_about">Rreth Nesh</a></li>
+          <li><a href="services.html" data-i18n="nav_services">Shërbimet</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Kontakti</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header" style="background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light)); padding: 120px 20px; text-align: center; color: white;">
+    <div class="container reveal-fade-up">
+      <h1 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; color: white;" data-i18n="about_page_title">Eksperienca Jonë 15-Vjeçare</h1>
+      <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto;" data-i18n="about_page_subtitle">Nga themelet e para deri te projektet më komplekse në të gjithë vendin.</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section style="padding: 80px 20px; background: white;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; max-width: 1200px; margin: 0 auto;" class="reveal-fade-up">
+        <!-- Text Content -->
+        <div>
+          <h2 style="font-size: 2.2rem; margin-bottom: 1.5rem; color: var(--secondary-color);" data-i18n="about_who_title">Kush jemi ne?</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.8;" data-i18n="about_who_text1">
+            Themeluar në vitin 2010, <strong style="color: var(--primary-color);">Ndërtim Pro</strong> ka filluar si një biznes familjar me një vizion të qartë: të ndërtojë objekte që sfidojnë kohën. Sot, ne jemi një nga liderët në tregun e rikonstruksioneve dhe punimeve të gipsit në Shqipëri.
+          </p>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8;" data-i18n="about_who_text2">
+            Ne besojmë se çdo detaj ka rëndësi. Prandaj, përdorim vetëm materialet më cilësore dhe teknologjinë më të fundit në ndërtim. Ekipi ynë i ekspertëve është i përkushtuar për të ofruar shërbime të shkëlqyeshme në çdo projekt.
+          </p>
+          
+          <!-- Mission & Vision Boxes -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px;">
+            <div style="background: var(--bg-secondary); padding: 25px; border-radius: 12px; text-align: center; transition: all 0.3s ease;">
+              <i class="fas fa-bullseye" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+              <h4 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--secondary-color);" data-i18n="about_mission_title">Misioni</h4>
+              <p style="color: var(--text-secondary); font-size: 0.95rem;" data-i18n="about_mission_text">Të ofrojmë siguri dhe stil në çdo ambient që prekim.</p>
+            </div>
+            <div style="background: var(--bg-secondary); padding: 25px; border-radius: 12px; text-align: center; transition: all 0.3s ease;">
+              <i class="fas fa-eye" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+              <h4 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--secondary-color);" data-i18n="about_vision_title">Vizioni</h4>
+              <p style="color: var(--text-secondary); font-size: 0.95rem;" data-i18n="about_vision_text">Të jemi partneri i parë i zgjedhur për çdo projekt ndërtimi.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="reveal-fade-up" data-delay="200">
+          <img src="assets/about-team.jpg" alt="Ekipi i Ndërtim Pro" style="width: 100%; border-radius: 15px; box-shadow: var(--shadow-xl);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section style="padding: 80px 20px; background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-title reveal-fade-up">
+        <h2 data-i18n="about_values_title">Vlerat Tona</h2>
+        <div class="line"></div>
+        <p class="section-subtitle" data-i18n="about_values_subtitle">Parimet që na udhëheqin në çdo projekt</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px;">
+        <!-- Value Card 1 -->
+        <div class="reveal-fade-up" data-delay="100" style="background: white; padding: 40px; border-radius: 12px; text-align: center; box-shadow: var(--shadow-sm); transition: all 0.3s ease; cursor: pointer;">
+          <i class="fas fa-check-double" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+          <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: var(--secondary-color);" data-i18n="about_value_quality_title">Cilësia</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7;" data-i18n="about_value_quality_text">Nuk bëjmë kompromis me materialet. Çdo tullë dhe çdo vidë është e certifikuar dhe testuara për qëndrueshmëri maksimale.</p>
+        </div>
+
+        <!-- Value Card 2 -->
+        <div class="reveal-fade-up" data-delay="200" style="background: white; padding: 40px; border-radius: 12px; text-align: center; box-shadow: var(--shadow-sm); transition: all 0.3s ease; cursor: pointer;">
+          <i class="fas fa-user-clock" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+          <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: var(--secondary-color);" data-i18n="about_value_punctuality_title">Korrektësia</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7;" data-i18n="about_value_punctuality_text">Afati i dorëzimit është i shenjtë për ne. Respektojmë çdo sekondë të kohës suaj dhe garantojmë përfundimin në kohë.</p>
+        </div>
+
+        <!-- Value Card 3 -->
+        <div class="reveal-fade-up" data-delay="300" style="background: white; padding: 40px; border-radius: 12px; text-align: center; box-shadow: var(--shadow-sm); transition: all 0.3s ease; cursor: pointer;">
+          <i class="fas fa-shield-alt" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+          <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: var(--secondary-color);" data-i18n="about_value_safety_title">Siguria</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7;" data-i18n="about_value_safety_text">Siguria në punë dhe siguria e objektit janë prioritetet tona absolute. Zbatojmë standardet më të larta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section style="padding: 80px 20px; background: white;">
+    <div class="container">
+      <div class="section-title reveal-fade-up">
+        <h2 data-i18n="about_team_title">Ekipi Ynë Profesionist</h2>
+        <div class="line"></div>
+        <p class="section-subtitle" data-i18n="about_team_subtitle">Ekspertë të dedikuar për suksesin tuaj</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-top: 50px;">
+        <!-- Team Member 1 -->
+        <div class="reveal-fade-up" data-delay="100" style="text-align: center;">
+          <div style="width: 150px; height: 150px; background: var(--primary-light); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md);">
+            <i class="fas fa-user-tie" style="font-size: 4rem; color: var(--primary-color);"></i>
+          </div>
+          <h4 style="font-size: 1.2rem; margin-bottom: 5px; color: var(--secondary-color);" data-i18n="about_team_member1_name">Meta </h4>
+          <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 10px;" data-i18n="about_team_member1_role">Inxhinier Përgjegjës</p>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="about_team_member1_desc">15+ vite përvojë në ndërtim</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="reveal-fade-up" data-delay="200" style="text-align: center;">
+          <div style="width: 150px; height: 150px; background: var(--primary-light); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md);">
+            <i class="fas fa-hard-hat" style="font-size: 4rem; color: var(--primary-color);"></i>
+          </div>
+          <h4 style="font-size: 1.2rem; margin-bottom: 5px; color: var(--secondary-color);" data-i18n="about_team_member2_name">Kastriot</h4>
+          <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 10px;" data-i18n="about_team_member2_role">Mbikëqyrës Projektesh</p>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="about_team_member2_desc">Specialist i rikonstruksioneve</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="reveal-fade-up" data-delay="300" style="text-align: center;">
+          <div style="width: 150px; height: 150px; background: var(--primary-light); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md);">
+            <i class="fas fa-paint-roller" style="font-size: 4rem; color: var(--primary-color);"></i>
+          </div>
+          <h4 style="font-size: 1.2rem; margin-bottom: 5px; color: var(--secondary-color);" data-i18n="about_team_member3_name">Max</h4>
+          <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 10px;" data-i18n="about_team_member3_role">Specialist Gipsi</p>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="about_team_member3_desc">Artist në dizajne dekorative</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner reveal-fade-up">
+    <div class="cta-content">
+      <h2 data-i18n="about_cta_title">Dëshironi të bëheni pjesë e historisë sonë?</h2>
+      <p data-i18n="about_cta_subtitle">Le të ndërtojmë së bashku projektin tuaj të ardhshëm!</p>
+      <a href="contact.html" class="btn btn-primary btn-large" data-i18n="about_cta_btn">
+        <i class="fas fa-envelope"></i> Na Kontakto
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <h3 data-i18n="footer_logo">NDËRTIM<span>PRO</span></h3>
+          </div>
+          <p class="footer-desc" data-i18n="footer_tagline">Cilësia që zgjat në kohë. Partnerët tuaj të besuar për çdo projekt ndërtimi.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_links_title">Lidhje të Shpejta</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="footer_links_home">Kryefaqja</a></li>
+            <li><a href="about.html" data-i18n="footer_links_about">Rreth Nesh</a></li>
+            <li><a href="services.html" data-i18n="footer_links_services">Shërbimet</a></li>
+            <li><a href="contact.html" data-i18n="footer_links_contact">Kontakti</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_services_title">Shërbimet</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#ndertim" data-i18n="footer_services_construction">Ndërtim Objektesh</a></li>
+            <li><a href="services.html#rikonstruksion" data-i18n="footer_services_renovation">Rikonstruksione</a></li>
+            <li><a href="services.html#gips" data-i18n="footer_services_gypsum">Lyerje & Gips</a></li>
+            <li><a href="index.html#calculator" data-i18n="footer_services_calculator">Llogaritësi i Kostos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_contact_title">Kontakti</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+355691234567">+355 69 123 4567</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@ndertimpro.al">info@ndertimpro.al</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-i18n="contact_info_address">Tiranë, Shqipëri</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ndërtim Pro. <span data-i18n="footer_copyright">Të gjitha të drejtat e rezervuara.</span></p>
+        <p class="credits"><span data-i18n="footer_credits">Dizajnuar & Zhvilluar me</span> <i class="fas fa-heart"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="main.js"></script>
+
+  <!-- Inline styles for value cards hover effect -->
+  <style>
+    div[style*="background: white"][style*="cursor: pointer"]:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+    
+    @media (max-width: 768px) {
+      div[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+</body>
+</html>

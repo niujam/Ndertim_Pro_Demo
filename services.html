@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shërbimet e Ndërtim Pro - Ndërtim objektesh, rikonstruksione, punime gipsi, lyerje profesionale dhe shumë më tepër.">
+  <title>Shërbimet | Ndërtim Pro</title>
+  
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="mainHeader" class="header">
+    <div class="header-container">
+      <div class="logo">
+        <h1>NDËRTIM<span>PRO</span></h1>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <nav class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Kryefaqja</a></li>
+          <li><a href="about.html">Rreth Nesh</a></li>
+          <li><a href="services.html" class="active">Shërbimet</a></li>
+          <li><a href="contact.html">Kontakti</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header" style="background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light)); padding: 100px 20px; text-align: center; color: white;">
+    <div class="container reveal-fade-up">
+      <h1 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; color: white;">Shërbimet Tona Profesionale</h1>
+      <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto;">Zgjidhje të plota për çdo nevojë ndërtimi - nga projektet e mëdha te detajet më të vogla</p>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section style="padding: 80px 20px; background: white;">
+    <div class="container">
+      <div class="section-title reveal-fade-up">
+        <h2>Çfarë Ofrojmë</h2>
+        <div class="line"></div>
+        <p class="section-subtitle">Ekspertiza dhe cilësi në çdo aspekt të ndërtimit</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px;">
+        <!-- Service Overview 1 -->
+        <div class="reveal-fade-up" data-delay="100" style="background: var(--bg-secondary); padding: 30px; border-radius: 12px; text-align: center;">
+          <div style="width: 80px; height: 80px; background: var(--primary-light); border-radius: 12px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-building" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+          </div>
+          <h3 style="margin-bottom: 15px; color: var(--secondary-color);">Ndërtim Objektesh</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;">Ndërtesa civile dhe industriale me standarde bashkëkohore</p>
+          <a href="#ndertim" style="color: var(--primary-color); font-weight: 600; text-decoration: none;">Më shumë detaje →</a>
+        </div>
+
+        <!-- Service Overview 2 -->
+        <div class="reveal-fade-up" data-delay="200" style="background: var(--bg-secondary); padding: 30px; border-radius: 12px; text-align: center;">
+          <div style="width: 80px; height: 80px; background: var(--primary-light); border-radius: 12px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-tools" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+          </div>
+          <h3 style="margin-bottom: 15px; color: var(--secondary-color);">Rikonstruksione</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;">Transformojmë hapësirat e vjetra në ambiente moderne</p>
+          <a href="#rikonstruksion" style="color: var(--primary-color); font-weight: 600; text-decoration: none;">Më shumë detaje →</a>
+        </div>
+
+        <!-- Service Overview 3 -->
+        <div class="reveal-fade-up" data-delay="300" style="background: var(--bg-secondary); padding: 30px; border-radius: 12px; text-align: center;">
+          <div style="width: 80px; height: 80px; background: var(--primary-light); border-radius: 12px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-brush" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+          </div>
+          <h3 style="margin-bottom: 15px; color: var(--secondary-color);">Lyerje & Gips</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;">Punime artistike dhe dekorative me cilësi maksimale</p>
+          <a href="#gips" style="color: var(--primary-color); font-weight: 600; text-decoration: none;">Më shumë detaje →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Detail 1: Ndërtim -->
+  <section id="ndertim" style="padding: 80px 20px; background: var(--bg-secondary);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; max-width: 1200px; margin: 0 auto;">
+        <!-- Image Side -->
+        <div class="reveal-fade-up">
+          <img src="assets/service-ndertim.jpg" alt="Ndërtim Objektesh" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-xl);">
+        </div>
+
+        <!-- Content Side -->
+        <div class="reveal-fade-up" data-delay="200">
+          <div style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-bottom: 20px;">
+            <i class="fas fa-building"></i> Ndërtim Objektesh
+          </div>
+          <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: var(--secondary-color);">Ndërtojmë Themelet e Së Ardhmes</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 25px; line-height: 1.8; font-size: 1.1rem;">
+            Nga projektet rezidenciale te ndërtesat industriale, ne ofrojmë shërbime të plota ndërtimi me standardet më të larta të cilësisë dhe sigurisë. Ekipi ynë i inxhinierëve dhe specialistëve garanton përfundim në kohë dhe brenda buxhetit.
+          </p>
+
+          <!-- Features List -->
+          <div style="display: grid; gap: 15px; margin-bottom: 30px;">
+            <div style="display: flex; align-items: start; gap: 15px;">
+              <div style="width: 40px; height: 40px; background: var(--primary-color); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-check" style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 5px; color: var(--secondary-color);">Ndërtim nga Zero</h4>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Projekte të plota nga themelimi deri te mbyllja e objektit</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: start; gap: 15px;">
+              <div style="width: 40px; height: 40px; background: var(--primary-color); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-check" style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 5px; color: var(--secondary-color);">Struktura Metalike</h4>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Zgjidhje moderne dhe të qëndrueshme për ndërtesa të mëdha</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: start; gap: 15px;">
+              <div style="width: 40px; height: 40px; background: var(--primary-color); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-check" style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 5px; color: var(--secondary-color);">Certifikime Ndërkombëtare</h4>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Materiale dhe procese të certifikuara ISO</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fas fa-phone"></i> Kërko një Ofertë
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Detail 2: Rikonstruksion -->
+  <section id="rikonstruksion" style="padding: 80px 20px; background: white;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; max-width: 1200px; margin: 0 auto;">
+        
+        <!-- Content Side (First on this section) -->
+        <div class="reveal-fade-up">
+          <div style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-bottom: 20px;">
+            <i class="fas fa-tools"></i> Rikonstruksione
+          </div>
+          <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: var(--secondary-color);">Rijetëzojmë Hapësirat Tuaja</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 25px; line-height: 1.8; font-size: 1.1rem;">
+            Rikonstruksionet janë më shumë se thjesht riparime - janë transformime. Ne specializohemi në modernizimin e objekteve të vjetra, duke i bërë ato funksionale, estetike dhe efiçente në energji. Çdo projekt trajtohet me kujdes dhe profesionalizëm maksimal.
+          </p>
+
+          <!-- Features List -->
+          <div style="display: grid; gap: 15px; margin-bottom: 30px;">
+            <div style="display: flex; align-items: start; gap: 15px;">
+              <div style="width: 40px; height: 40px; background: var(--primary-color); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-check" style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 5px; color: var(--secondary-color);">Renovime Totale</h4>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Ndryshim komplet i brendshëm dhe të jashtëm</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: start; gap: 15px;">
+              <div style="width: 40px; height: 40px; background: var(--primary-color); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-check" style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 5px; color: var(--secondary-color);">Modernizim Objektesh</h4>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Teknologji e re për ndërtesa të vjetra</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: start; gap: 15px;">
+              <div style="width: 40px; height: 40px; background: var(--primary-color); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-check" style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 5px; color: var(--secondary-color);">Garanci 5-Vjeçare</h4>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Siguri dhe besueshmëri afatgjatë</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Diskuto Projektin
+          </a>
+        </div>
+
+        <!-- Image Side -->
+        <div class="reveal-fade-up" data-delay="200">
+          <img src="assets/service-rikonstruksion.jpg" alt="Rikonstruksione" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-xl);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Detail 3: Gips & Lyerje -->
+  <section id="gips" style="padding: 80px 20px; background: var(--bg-secondary);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; max-width: 1200px; margin: 0 auto;">
+        
+        <!-- Image Side -->
+        <div class="reveal-fade-up">
+          <img src="assets/service-gips.jpg" alt="Lyerje dhe Gips" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-xl);">
+        </div>
+
+        <!-- Content Side -->
+        <div class="reveal-fade-up" data-delay="200">
+          <div style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-bottom: 20px;">
+            <i class="fas fa-brush"></i> Lyerje & Gips
+          </div>
+          <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: var(--secondary-color);">Arte dhe Precision në Çdo Detaj</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 25px; line-height: 1.8; font-size: 1.1rem;">
+            Punimet e gipsit dhe lyerjes janë arti ynë. Nga tavani dekorativ te muret e lyera me përsoshmëri, ne krijojmë ambiente që frymëzojnë. Përdorim vetëm materiale premium dhe teknika moderne për rezultate të jashtëzakonshme.
+          </p>
+
+          <!-- Features List -->
+          <div style="display: grid; gap: 15px; margin-bottom: 30px;">
+            <div style="display: flex; align-items: start; gap: 15px;">
+              <div style="width: 40px; height: 40px; background: var(--primary-color); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-check" style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 5px; color: var(--secondary-color);">Dizajne Unike</h4>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Krijime artistike të personalizuara për çdo hapësirë</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: start; gap: 15px;">
+              <div style="width: 40px; height: 40px; background: var(--primary-color); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-check" style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 5px; color: var(--secondary-color);">Materiale Premium</h4>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Bojëra dhe gips i importuar me certifikata cilësie</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: start; gap: 15px;">
+              <div style="width: 40px; height: 40px; background: var(--primary-color); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-check" style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 5px; color: var(--secondary-color);">Ekip i Specializuar</h4>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Artistë dhe teknikë me përvojë 10+ vjeçare</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fas fa-palette"></i> Shiko Portfolion
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Services -->
+  <section style="padding: 80px 20px; background: white;">
+    <div class="container">
+      <div class="section-title reveal-fade-up">
+        <h2>Shërbime Shtesë</h2>
+        <div class="line"></div>
+        <p class="section-subtitle">Zgjidhje të plota për çdo nevojë</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 50px;">
+        <!-- Additional Service 1 -->
+        <div class="reveal-fade-up" data-delay="100" style="padding: 30px; background: var(--bg-secondary); border-radius: 12px; border-left: 4px solid var(--primary-color);">
+          <i class="fas fa-home" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+          <h4 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--secondary-color);">Fasada</h4>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Izolim termik dhe estetikë e jashtme</p>
+        </div>
+
+        <!-- Additional Service 2 -->
+        <div class="reveal-fade-up" data-delay="200" style="padding: 30px; background: var(--bg-secondary); border-radius: 12px; border-left: 4px solid var(--primary-color);">
+          <i class="fas fa-water" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+          <h4 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--secondary-color);">Hidraulikë</h4>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Instalime dhe riparime të sistemeve ujore</p>
+        </div>
+
+        <!-- Additional Service 3 -->
+        <div class="reveal-fade-up" data-delay="300" style="padding: 30px; background: var(--bg-secondary); border-radius: 12px; border-left: 4px solid var(--primary-color);">
+          <i class="fas fa-bolt" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+          <h4 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--secondary-color);">Elektrike</h4>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Instalime elektrike dhe certifikime</p>
+        </div>
+
+        <!-- Additional Service 4 -->
+        <div class="reveal-fade-up" data-delay="400" style="padding: 30px; background: var(--bg-secondary); border-radius: 12px; border-left: 4px solid var(--primary-color);">
+          <i class="fas fa-door-open" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+          <h4 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--secondary-color);">Dyert & Dritaret</h4>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Instalim dritaresh dhe dyerash PVC/Alumin</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section style="padding: 80px 20px; background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));">
+    <div class="container">
+      <div class="section-title reveal-fade-up">
+        <h2 style="color: white;">Si Punojmë</h2>
+        <div class="line"></div>
+        <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Procesi ynë i thjeshtë dhe transparent</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 50px;">
+        <!-- Step 1 -->
+        <div class="reveal-fade-up" data-delay="100" style="text-align: center; color: white;">
+          <div style="width: 80px; height: 80px; background: var(--primary-color); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 800; color: var(--secondary-color);">1</div>
+          <h4 style="font-size: 1.3rem; margin-bottom: 15px; color: var(--primary-color);">Konsulencë</h4>
+          <p style="color: rgba(255,255,255,0.8);">Takohemi dhe diskutojmë nevojat dhe vizionin tuaj</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="reveal-fade-up" data-delay="200" style="text-align: center; color: white;">
+          <div style="width: 80px; height: 80px; background: var(--primary-color); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 800; color: var(--secondary-color);">2</div>
+          <h4 style="font-size: 1.3rem; margin-bottom: 15px; color: var(--primary-color);">Planifikim</h4>
+          <p style="color: rgba(255,255,255,0.8);">Hartojmë plan të detajuar dhe ofertë transparente</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="reveal-fade-up" data-delay="300" style="text-align: center; color: white;">
+          <div style="width: 80px; height: 80px; background: var(--primary-color); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 800; color: var(--secondary-color);">3</div>
+          <h4 style="font-size: 1.3rem; margin-bottom: 15px; color: var(--primary-color);">Ekzekutim</h4>
+          <p style="color: rgba(255,255,255,0.8);">Ekipi ynë realizon projektin me profesionalizëm</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="reveal-fade-up" data-delay="400" style="text-align: center; color: white;">
+          <div style="width: 80px; height: 80px; background: var(--primary-color); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 800; color: var(--secondary-color);">4</div>
+          <h4 style="font-size: 1.3rem; margin-bottom: 15px; color: var(--primary-color);">Dorëzim</h4>
+          <p style="color: rgba(255,255,255,0.8);">Kontrollojmë cilësinë dhe dorëzojmë objektin</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner reveal-fade-up">
+    <div class="cta-content">
+      <h2>Gati për të filluar projektin tuaj?</h2>
+      <p>Na kontaktoni sot për një konsulencë falas dhe ofertë pa detyrim.</p>
+      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+        <a href="contact.html" class="btn btn-primary btn-large">
+          <i class="fas fa-envelope"></i> Kërko Ofertë
+        </a>
+        <a href="index.html#calculator" class="btn btn-outline btn-large">
+          <i class="fas fa-calculator"></i> Llogarit Koston
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <h3>NDËRTIM<span>PRO</span></h3>
+          </div>
+          <p class="footer-desc">Cilësia që zgjat në kohë. Partnerët tuaj të besuar për çdo projekt ndërtimi.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Lidhje të Shpejta</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Kryefaqja</a></li>
+            <li><a href="about.html">Rreth Nesh</a></li>
+            <li><a href="services.html">Shërbimet</a></li>
+            <li><a href="contact.html">Kontakti</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Shërbimet</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#ndertim">Ndërtim Objektesh</a></li>
+            <li><a href="services.html#rikonstruksion">Rikonstruksione</a></li>
+            <li><a href="services.html#gips">Lyerje & Gips</a></li>
+            <li><a href="index.html#calculator">Llogaritësi i Kostos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontakti</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+355691234567">+355 69 123 4567</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:avnihasa68@gmail.com">info@ndertimpro.al</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Tiranë, Shqipëri</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ndërtim Pro. Të gjitha të drejtat e rezervuara.</p>
+        <p class="credits">Dizajnuar & Zhvilluar me <i class="fas fa-heart"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="main.js"></script>
+
+  <!-- Inline Responsive Styles -->
+  <style>
+    @media (max-width: 768px) {
+      div[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+      }
+      
+      /* Reverse order for mobile on rikonstruksion section */
+      #rikonstruksion > div > div {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  </style>
+
+</body>
+</html>

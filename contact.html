@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontaktoni Ndërtim Pro për një konsulencë falas. Na shkruani për projektet tuaja të ndërtimit.">
+  <title>Kontakti | Ndërtim Pro</title>
+  
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="mainHeader" class="header">
+    <div class="header-container">
+      <div class="logo">
+        <h1 data-i18n="site_name">NDËRTIM<span>PRO</span></h1>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <nav class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Kryefaqja</a></li>
+          <li><a href="about.html" data-i18n="nav_about">Rreth Nesh</a></li>
+          <li><a href="services.html" data-i18n="nav_services">Shërbimet</a></li>
+          <li><a href="contact.html" class="active" data-i18n="nav_contact">Kontakti</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header" style="background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light)); padding: 100px 20px; text-align: center; color: white;">
+    <div class="container reveal-fade-up">
+      <h1 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; color: white;" data-i18n="contact_page_title">Na Kontaktoni</h1>
+      <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto;" data-i18n="contact_page_subtitle">Jemi këtu për t'ju ndihmuar. Dërgoni një mesazh dhe do t'ju përgjigjemi brenda 24 orëve.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section style="padding: 80px 20px; background: var(--bg-secondary);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1200px; margin: 0 auto;">
+        
+        <!-- Contact Form -->
+        <div class="reveal-fade-up">
+          <div style="background: white; padding: 40px; border-radius: 16px; box-shadow: var(--shadow-lg);">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--secondary-color);" data-i18n="contact_form_title">Dërgoni një Mesazh</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;" data-i18n="contact_form_subtitle">Plotësoni formularin më poshtë dhe ekipi ynë do t'ju kontaktojë sa më shpejt.</p>
+            
+            <form id="contactForm" novalidate>
+              <!-- Name Field -->
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="name" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary-color);">
+                  <span data-i18n="contact_form_name_required"><i class="fas fa-user" style="color: var(--primary-color); margin-right: 8px;"></i>Emri i Plotë *</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name"
+                  required 
+                  data-i18n="contact_form_name_placeholder"
+                  data-i18n-attr="placeholder"
+                  placeholder="Shkruani emrin tuaj të plotë"
+                  style="width: 100%; padding: 14px 16px; border: 2px solid var(--gray-300); border-radius: 8px; font-size: 1rem; font-family: inherit; transition: all 0.3s ease;"
+                >
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary-color);">
+                  <span data-i18n="contact_form_email_required"><i class="fas fa-envelope" style="color: var(--primary-color); margin-right: 8px;"></i>Email *</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email"
+                  required 
+                  data-i18n="contact_form_email_placeholder"
+                  data-i18n-attr="placeholder"
+                  placeholder="email@example.com"
+                  style="width: 100%; padding: 14px 16px; border: 2px solid var(--gray-300); border-radius: 8px; font-size: 1rem; font-family: inherit; transition: all 0.3s ease;"
+                >
+              </div>
+
+              <!-- Phone Field -->
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="phone" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary-color);">
+                  <span data-i18n="contact_form_phone_required"><i class="fas fa-phone" style="color: var(--primary-color); margin-right: 8px;"></i>Telefoni *</span>
+                </label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone"
+                  required 
+                  data-i18n="contact_form_phone_placeholder"
+                  data-i18n-attr="placeholder"
+                  placeholder="+355 69 XXX XXXX"
+                  style="width: 100%; padding: 14px 16px; border: 2px solid var(--gray-300); border-radius: 8px; font-size: 1rem; font-family: inherit; transition: all 0.3s ease;"
+                >
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="subject" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary-color);">
+                  <span data-i18n="contact_form_subject_label"><i class="fas fa-tag" style="color: var(--primary-color); margin-right: 8px;"></i>Subjekti</span>
+                </label>
+                <select 
+                  id="subject" 
+                  name="subject"
+                  style="width: 100%; padding: 14px 16px; border: 2px solid var(--gray-300); border-radius: 8px; font-size: 1rem; font-family: inherit; transition: all 0.3s ease; background: white;"
+                >
+                  <option value="" data-i18n="contact_form_subject_select">Zgjidhni subjektin</option>
+                  <option value="ndertim" data-i18n="contact_form_subject_construction">Ndërtim i Ri</option>
+                  <option value="rikonstruksion" data-i18n="contact_form_subject_renovation">Rikonstruksion</option>
+                  <option value="gips" data-i18n="contact_form_subject_gypsum">Punime Gipsi</option>
+                  <option value="oferte" data-i18n="contact_form_subject_quote">Kërkesë për Ofertë</option>
+                  <option value="tjeter" data-i18n="contact_form_subject_other">Të Tjera</option>
+                </select>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="message" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--secondary-color);">
+                  <span data-i18n="contact_form_message_required"><i class="fas fa-comment-alt" style="color: var(--primary-color); margin-right: 8px;"></i>Mesazhi *</span>
+                </label>
+                <textarea 
+                  id="message" 
+                  name="message"
+                  required 
+                  rows="5"
+                  data-i18n="contact_form_message_placeholder"
+                  data-i18n-attr="placeholder"
+                  placeholder="Shkruani mesazhin tuaj këtu..."
+                  style="width: 100%; padding: 14px 16px; border: 2px solid var(--gray-300); border-radius: 8px; font-size: 1rem; font-family: inherit; transition: all 0.3s ease; resize: vertical; min-height: 120px;"
+                ></textarea>
+              </div>
+
+              <!-- Privacy Policy -->
+              <div style="margin-bottom: 1.5rem;">
+                <label style="display: flex; align-items: start; gap: 10px; cursor: pointer;">
+                  <input type="checkbox" id="privacy" required style="margin-top: 3px; accent-color: var(--primary-color);">
+                  <span style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;" data-i18n="contact_form_privacy">
+                    Pranoj <a href="#" style="color: var(--primary-color); text-decoration: underline;">politikën e privatësisë</a> dhe kushtet e përdorimit *
+                  </span>
+                </label>
+              </div>
+
+              <!-- Submit Button -->
+              <button 
+                type="submit" 
+                id="submitBtn"
+                class="btn btn-primary btn-large"
+                style="width: 100%; margin-top: 1rem;"
+                data-i18n="contact_form_btn"
+              >
+                <i class="fas fa-paper-plane"></i> Dërgo Mesazhin
+              </button>
+
+              <!-- Status Message -->
+              <div id="statusMessage" style="margin-top: 1.5rem; padding: 15px; border-radius: 8px; display: none;"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="reveal-fade-up" data-delay="200">
+          <!-- Contact Cards -->
+          <div style="display: flex; flex-direction: column; gap: 25px;">
+            <!-- Phone Card -->
+            <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-md); display: flex; align-items: center; gap: 20px;">
+              <div style="width: 60px; height: 60px; background: var(--primary-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-phone-alt" style="font-size: 1.8rem; color: var(--primary-color);"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--secondary-color);" data-i18n="contact_info_phone_title">Telefoni</h4>
+                <a href="tel:+355691234567" style="color: var(--text-secondary); font-size: 1.1rem; font-weight: 600;">+355 69 123 4567</a>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;" data-i18n="contact_info_phone_hours">E Hënë - E Shtunë: 08:00 - 18:00</p>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-md); display: flex; align-items: center; gap: 20px;">
+              <div style="width: 60px; height: 60px; background: var(--primary-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-envelope" style="font-size: 1.8rem; color: var(--primary-color);"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--secondary-color);" data-i18n="contact_info_email_title">Email</h4>
+                <a href="mailto:info@ndertimpro.al" style="color: var(--text-secondary); font-size: 1.1rem; font-weight: 600;">info@ndertimpro.al</a>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;" data-i18n="contact_info_email_response">Përgjigjemi brenda 24 orëve</p>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-md); display: flex; align-items: center; gap: 20px;">
+              <div style="width: 60px; height: 60px; background: var(--primary-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-map-marker-alt" style="font-size: 1.8rem; color: var(--primary-color);"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--secondary-color);" data-i18n="contact_info_address_title">Adresa</h4>
+                <p style="color: var(--text-secondary); font-size: 1rem; font-weight: 600;" data-i18n="contact_info_address">Tiranë, Shqipëri</p>
+              </div>
+            </div>
+
+            <!-- Working Hours -->
+            <div style="background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light)); padding: 30px; border-radius: 16px; box-shadow: var(--shadow-lg); color: white;">
+              <h4 style="font-size: 1.3rem; margin-bottom: 15px; color: var(--primary-color);" data-i18n="contact_hours_title">
+                <i class="fas fa-clock"></i> Orari i Punës
+              </h4>
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                  <span data-i18n="contact_hours_weekday">E Hënë - E Premte</span>
+                  <span style="font-weight: 600;" data-i18n="contact_hours_weekday_time">08:00 - 18:00</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                  <span data-i18n="contact_hours_saturday">E Shtunë</span>
+                  <span style="font-weight: 600;" data-i18n="contact_hours_saturday_time">09:00 - 14:00</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 8px 0;">
+                  <span data-i18n="contact_hours_sunday">E Diel</span>
+                  <span style="font-weight: 600; color: var(--primary-color);" data-i18n="contact_hours_closed">Mbyllur</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media -->
+            <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-md); text-align: center;">
+              <h4 style="font-size: 1.2rem; margin-bottom: 20px; color: var(--secondary-color);" data-i18n="contact_social_title">Na Ndiqni</h4>
+              <div style="display: flex; justify-content: center; gap: 15px;">
+                <a href="#" style="width: 50px; height: 50px; background: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                  <i class="fab fa-facebook-f" style="font-size: 1.3rem; color: var(--primary-color);"></i>
+                </a>
+                <a href="#" style="width: 50px; height: 50px; background: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                  <i class="fab fa-instagram" style="font-size: 1.3rem; color: var(--primary-color);"></i>
+                </a>
+                <a href="#" style="width: 50px; height: 50px; background: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                  <i class="fab fa-linkedin-in" style="font-size: 1.3rem; color: var(--primary-color);"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section (Optional) -->
+  <section style="padding: 0; background: white;">
+    <div style="width: 100%; height: 400px; background: var(--gray-200); display: flex; align-items: center; justify-content: center;">
+      <p style="color: var(--text-muted);" data-i18n="contact_map_placeholder">
+        <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: var(--primary-color); display: block; margin-bottom: 10px;"></i>
+        Harta do të shfaqet këtu (Google Maps API)
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <h3 data-i18n="footer_logo">NDËRTIM<span>PRO</span></h3>
+          </div>
+          <p class="footer-desc" data-i18n="footer_tagline">Cilësia që zgjat në kohë. Partnerët tuaj të besuar për çdo projekt ndërtimi.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_links_title">Lidhje të Shpejta</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="footer_links_home">Kryefaqja</a></li>
+            <li><a href="about.html" data-i18n="footer_links_about">Rreth Nesh</a></li>
+            <li><a href="services.html" data-i18n="footer_links_services">Shërbimet</a></li>
+            <li><a href="contact.html" data-i18n="footer_links_contact">Kontakti</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_services_title">Shërbimet</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#ndertim" data-i18n="footer_services_construction">Ndërtim Objektesh</a></li>
+            <li><a href="services.html#rikonstruksion" data-i18n="footer_services_renovation">Rikonstruksione</a></li>
+            <li><a href="services.html#gips" data-i18n="footer_services_gypsum">Lyerje & Gips</a></li>
+            <li><a href="index.html#calculator" data-i18n="footer_services_calculator">Llogaritësi i Kostos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_contact_title">Kontakti</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+355691234567">+355 69 123 4567</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@ndertimpro.al">info@ndertimpro.al</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-i18n="contact_info_address">Tiranë, Shqipëri</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ndërtim Pro. <span data-i18n="footer_copyright">Të gjitha të drejtat e rezervuara.</span></p>
+        <p class="credits"><span data-i18n="footer_credits">Dizajnuar & Zhvilluar me</span> <i class="fas fa-heart"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Firebase & Form Handler Script -->
+  <script>
+    // ============================================
+    // FIREBASE CONFIGURATION
+    // ============================================
+    // IMPORTANT: Replace with your Firebase project credentials
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY_HERE",
+      authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_PROJECT_ID.appspot.com",
+      messagingSenderId: "YOUR_SENDER_ID",
+      appId: "YOUR_APP_ID"
+    };
+
+    // Initialize Firebase
+    let db;
+    try {
+      const app = firebase.initializeApp(firebaseConfig);
+      db = firebase.firestore();
+    } catch (error) {
+      console.warn('Firebase not configured. Form will work with client-side validation only.');
+    }
+
+    // ============================================
+    // FORM SUBMISSION HANDLER WITH i18n SUPPORT
+    // ============================================
+    const contactForm = document.getElementById('contactForm');
+    const statusMessage = document.getElementById('statusMessage');
+
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Get form values
+      const formData = {
+        name: document.getElementById('name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        phone: document.getElementById('phone').value.trim(),
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value.trim(),
+        privacy: document.getElementById('privacy').checked,
+        timestamp: new Date().toISOString()
+      };
+
+      // Validate privacy checkbox
+      if (!formData.privacy) {
+        showMessage(i18n.t('contact_form_privacy_error') || 'Ju lutemi pranoni politikën e privatësisë!', 'error');
+        return;
+      }
+
+      // Show loading state
+      const submitBtn = document.getElementById('submitBtn');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = i18n.t('contact_form_btn_sending') || '<i class="fas fa-spinner fa-spin"></i> Duke dërguar...';
+
+      try {
+        // Try to save to Firebase if configured
+        if (db) {
+          await db.collection('contacts').add({
+            ...formData,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+          });
+          
+          showMessage(i18n.t('contact_form_success'), 'success');
+        } else {
+          // Fallback: Just show success message
+          console.log('Form Data:', formData);
+          showMessage(i18n.t('contact_form_success'), 'success');
+        }
+
+        // Reset form
+        contactForm.reset();
+
+      } catch (error) {
+        console.error('Error:', error);
+        showMessage(i18n.t('contact_form_error'), 'error');
+      } finally {
+        // Restore button state
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      }
+    });
+
+    // ============================================
+    // STATUS MESSAGE DISPLAY
+    // ============================================
+    function showMessage(message, type) {
+      statusMessage.textContent = message;
+      statusMessage.style.display = 'block';
+      statusMessage.style.padding = '15px 20px';
+      statusMessage.style.borderRadius = '8px';
+      statusMessage.style.fontWeight = '600';
+      
+      if (type === 'success') {
+        statusMessage.style.background = '#d4edda';
+        statusMessage.style.color = '#155724';
+        statusMessage.style.border = '1px solid #c3e6cb';
+      } else {
+        statusMessage.style.background = '#f8d7da';
+        statusMessage.style.color = '#721c24';
+        statusMessage.style.border = '1px solid #f5c6cb';
+      }
+
+      // Auto-hide after 5 seconds
+      setTimeout(() => {
+        statusMessage.style.display = 'none';
+      }, 5000);
+    }
+  </script>
+
+  <!-- Main JavaScript -->
+  <script src="main.js"></script>
+
+  <!-- Inline Styles -->
+  <style>
+    /* Form input focus styles */
+    input:focus, textarea:focus, select:focus {
+      outline: none !important;
+      border-color: var(--primary-color) !important;
+      box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1) !important;
+    }
+    
+    /* Social links hover effect */
+    .social-links a:hover,
+    a[style*="background: var(--primary-light)"]:hover {
+      background: var(--primary-color) !important;
+      transform: translateY(-3px);
+    }
+    
+    /* Mobile responsive grid */
+    @media (max-width: 768px) {
+      div[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+</body>
+</html>
