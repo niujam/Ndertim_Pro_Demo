@@ -102,7 +102,7 @@ With a **fully responsive design**, **multi-language support (English/Albanian)*
 
 ## 🚀 Live Demo
 
-**[View Live Demo](#)** *(Replace with your demo URL)*
+**[View Live Demo](#)** *(https://niujam.github.io/Ndertim_Pro_Demo/)*
 
 Experience all features in action:
 - Switch between English and Albanian
@@ -731,7 +731,7 @@ If you're happy with this template, please consider:
 
 ### Stay Connected
 
-- 🌐 Website: [www.ndertimpro.com](#)
+- 🌐 Website: [https://niujam.github.io/Ndertim_Pro_Demo/](#)
 - 📧 Email: avnihasa68@gmail.com
 - 💬 Facebook: [@ndertimpro](#)
 - 📸 Instagram: [@ndertimpro](#)
